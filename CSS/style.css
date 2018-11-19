@@ -19,3 +19,9 @@ body
   font-familty:Verdana, Arial, Helvetica, sans-serif;
   color: #F0FFFF;
 }
+
+#topbar
+{
+  height:78px;
+}
+
