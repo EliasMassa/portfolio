@@ -1,9 +1,21 @@
+body
+{
+  background:#2F4F4F url(images/bg.png) repeat-x;  
+}
+
+#wrap
+{
+  width:700px;
+  margin:0px auto 15px auto;
+  font-familty:Verdana, Arial, Helvetica, sans-serif;
+  color: #666666;
+}
+
 /* Header */
 #header 
 {
-  height:242PX;
-  margin:0PX auto 15PX auto;
+  height:242px;
+  margin:0px auto 15xp auto;
   font-familty:Verdana, Arial, Helvetica, sans-serif;
   color: #F0FFFF;
-  
 }
