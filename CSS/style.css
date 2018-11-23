@@ -32,13 +32,28 @@ body
   padding:0 0px 278px;
   float: right;
   width: 415px;
-  background-color: #FFD700; 
+  background-color: #FFD700;
+  position: fixed;
+}
+
+#content
+{
+  background-color: #B22222;  
 }
 
 #footer 
 {
   height:242px;
-  background-color: #8A2BE2;
+  margin:0 auto;
+	width:685px;
+	height:20px;
+	padding:10px;
+	color:#FFFFFF;
+	text-align: center;
+	background:#444422;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	clear: both;
 }
 
 
