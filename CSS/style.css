@@ -8,7 +8,7 @@ body
   width:700px;
   margin:0px auto 15px auto;
   font-familty:Verdana, Arial, Helvetica, sans-serif;
-  color: #666666;
+  backgound-color: #666666;
 }
 
 /* Header */
@@ -17,13 +17,13 @@ body
   height:242px;
   margin:0px auto 15xp auto;
   font-familty:Verdana, Arial, Helvetica, sans-serif;
-  color: ##7FFFD4;
+  backgound-color: #7FFFD4;
 }
 
 #topbar
 {
   height:78px;
-  color: #00BFFF;
+  background-color: #00BFFF;
 }
 
 #topmenu {
@@ -32,11 +32,13 @@ body
   padding:0 0px 278px;
   float: right;
   width: 415px;
+  background-color: #FFD700; 
 }
 
-#footer {
+#footer 
+{
   height:242px;
-  color: #8A2BE2;
+  background-color: #8A2BE2;
 }
 
 
