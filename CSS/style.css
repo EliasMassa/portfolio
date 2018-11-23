@@ -17,7 +17,7 @@ body
   height:242px;
   margin:0px auto 15xp auto;
   font-familty:Verdana, Arial, Helvetica, sans-serif;
-  color: #F0FFFF;
+  color: ##7FFFD4;
 }
 
 #topbar
@@ -36,7 +36,7 @@ body
 
 #footer {
   height:242px;
-  color: #F0FFFF;
+  color: #8A2BE2;
 }
 
 
