@@ -26,12 +26,17 @@ body
   color: #00BFFF;
 }
 
-#topmenu
-{
+#topmenu {
   display:block;
   list-style:none;
   padding:0 0px 278px;
   float: right;
   width: 415px;
 }
+
+#footer {
+  height:242px;
+  color: #F0FFFF;
+}
+
 
