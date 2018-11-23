@@ -14,7 +14,8 @@ body
 /* Header */
 #header 
 {
-  height:242px;
+  height: 242px;
+  width: 685px;
   margin:0px auto 15xp auto;
   font-familty:Verdana, Arial, Helvetica, sans-serif;
   background-color: #7FFFD4;
@@ -31,13 +32,13 @@ body
   list-style:none;
   padding:0 0px 278px;
   float: right;
-  width: 415px;
   background-color: #FFD700;
   position: fixed;
 }
 
 #content
 {
+  width: 685px;	
   background-color: #B22222;  
 }
 
