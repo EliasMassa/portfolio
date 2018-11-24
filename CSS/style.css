@@ -1,13 +1,19 @@
+@font-face {
+font-family: "Nunito";
+<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+}
+
 body
 {
-  background-color:	#2F4F4F;  
+  background-color: #2F4F4F;
+  font-family: 'Nunito', sans-serif;	
 }
 
 #wrap
 {
   width:700px;
   margin:0px auto 15px auto;
-  font-familty:Verdana, Arial, Helvetica, sans-serif;
+  font-family:Verdana, Arial, Helvetica, sans-serif;
   background-color: #ADFF2F;
 }
 
@@ -37,7 +43,8 @@ body
 #content
 {
   padding:0 0px 0px 200px;	
-  background-color: #B22222;  
+  background-color: #B22222;
+  font-family: 		
 }
 
 #footer 
