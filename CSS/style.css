@@ -10,6 +10,13 @@ font-family: "Nunito";
   	grid-template-rows: 80px 400px auto;
 }
 
+.item1 
+{
+  	grid-column: 1 / 4;
+	grid-row: 1 ;
+	background-color: #7FFF00;
+}
+
 
 
 body
