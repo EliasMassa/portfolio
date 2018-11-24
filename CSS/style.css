@@ -8,7 +8,7 @@ font-family: "Nunito";
     display: grid;
     background-color: #191919;
     grid-template-columns: 10% auto 10%;
-    grid-template-rows: 80px auto auto;
+    grid-template-rows: 80px 80px auto;
 }
 
 	
@@ -32,6 +32,7 @@ font-family: "Nunito";
     display: grid;
     grid-template-columns: 100px 280px auto;
     border-bottom: 4px solid #ff6600;
+    z-index: 2;
 }
 
 .menubox h1 {
@@ -75,16 +76,14 @@ li a:hover {
 .content {
     display: grid;
     grid-column: 2 / 3;
-    grid-row: 2;
+    grid-row: 3 / 4;
     background-color: #000000;
-    padding-top: 5px;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    margin-bottom: 50px;
     grid-template-columns: 50% 50%;
     height: auto;
-    
-    grid-template-areas:
-        "image text"
-        "dividerH dividerH"
-        ;
+    grid-template-areas: "image text" "dividerH dividerH";
 }
 
 .image {
@@ -117,6 +116,59 @@ li a:hover {
     bottom: 15%;
     border-left: 1px solid white;
 }
+
+.dividerH {
+    position: absolute;
+    left: 12%;
+    right: 12%;
+    top: 150px;
+    z-index: 1;
+    border-top: 2px solid white;
+}
+
+.header {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: #000000;
+    padding-top: 0px;
+    padding-bottom: 5px;
+    padding-left: 2%;
+    margin-bottom: 0px;
+    height: auto;
+}
+
+
+
+
+.footer {
+    position: fixed;
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 3;
+    margin-top: 50px;
+    width: 100%;
+    bottom: 0;
+    background-color: #000000;
+    text-align: center;
+    border-top: 4px solid #ff6600;
+}
+
+table, table thead td, th {
+    border: 2px solid white;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    text-align:left;
+    margin: 50px;
+     
+
+}
+
+
+
 
 
 

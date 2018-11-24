@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-	
-	<title> EM Portfolio </title>
-    <link rel="icon" href="images/emlogo.png">
-	<link href="CSS/style.css" rel="stylesheet" type="text/css">
-	
-	<style>
-            
-	</style>
-	
-	</head>
+<head>
 
-	<body>
+    <title> EM Portfolio </title>
+    <link rel="icon" href="images/emlogo.png">
+    <link href="CSS/style.css" rel="stylesheet" type="text/css">
+
+    <script>
+        function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("At least write something!");
+                return false;
+            }
+            else {
+                alert("Thanks for feedback!");
+                return false;
+            }
+
+        }
+    </script>
+
+</head>
+
+    <body>
         <div class="container">
 
             <div class="menubox">
@@ -32,18 +43,59 @@
 
             </div>
 
-            <div class="content">
+            <div class="header">
 
-                <h1>This page is quite tasking</h1>
+                <h1>THIS PAGE IS QUITE TASKING</h1>
 
-
-
-
+                <div class="dividerH"></div>
 
             </div>
+
+            <div class="content">
+
+                <table>
+                    <tr style="background-color:#000099">
+                        <th>Things to do:</th>
+                        <th>Status:</th>
+                        <th>Time passed:</th>
+                    </tr>
+                    <tr>
+                        <th>Finish to website</th>
+                        <th>In progress</th>
+                        <th>Many hours</th>
+                    </tr>
+                    <tr>
+                        <th>Pick up apples</th>
+                        <th>Completed</th>
+                        <th>2h</th>
+                    </tr>
+                    <tr>
+                        <th>Sit in the woods</th>
+                        <th>Pending</th>
+                        <th>Over 1min</th>
+                    </tr>
+
+                </table>
+
+                <form name="myForm" action="/action_page.php"
+                      onsubmit="return validateForm()" method="post">
+                    Write something about this webpage: <input type="text" name="fname">
+                    <input type="submit" value="Give feedback!">
+                </form>
+  
+
+            </div>
+
             
 
+
         </div>
-			
-	</body>
+
+        <div class="footer">
+
+            <p>Copyright (R) MASSA INDUSTRIES</p>
+
+        </div>
+
+    </body>
 </html>
