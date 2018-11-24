@@ -19,8 +19,8 @@ font-family: "Nunito";
 
 .testitem
 {
-	grid-column: 1
-	grid-row: 2;
+	grid-column: 2 / 3;
+	grid-row: 1 / 2;
 	background-color: #006400
 }
 
