@@ -4,67 +4,71 @@ font-family: "Nunito";
 <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 }
 
-.container {
-  grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
-  grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+.container 
+{
+	grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+  	grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
 }
 
-.item-a {
-  grid-column-start: line2;
-  grid-column-end: five;
-  grid-row-start: row1-start
-  grid-row-end: 3;
+.item-a 
+{
+  	grid-column-start: line2;
+  	grid-column-end: five;
+  	grid-row-start: row1-start;
+  	grid-row-end: 3;
+	background-color: #A52A2A;
+	
 }
 
 
 body
 {
-  background-color: #2F4F4F;
-  font-family: 'Nunito', sans-serif;	
+  	background-color: #2F4F4F;	
+  	font-family: 'Nunito', sans-serif;	
 }
 
 #wrap
 {
-  width:700px;
-  margin:0px auto 15px auto;
-  font-family:Verdana, Arial, Helvetica, sans-serif;
-  background-color: #ADFF2F;
+  	width:700px;
+  	margin:0px auto 15px auto;
+  	font-family:Verdana, Arial, Helvetica, sans-serif;
+  	background-color: #ADFF2F;
 }
 
 /* Header */
 #header 
 {
-  height: 242px;
-  padding:0 0px 0px 278px;
-  background-color: #7FFFD4;
+  	height: 242px;
+  	padding:0 0px 0px 278px;
+  	background-color: #7FFFD4;
 }
 
 #topbar
 {
-  height:78px;
-  background-color: #00BFFF;
+ 	 height:78px;
+  	background-color: #00BFFF;
 }
 
 #topmenu {
-  display:block;
-  list-style:none;
-  padding:0 0px 0px 278px;
-  float: right;
-  background-color: #FFD700;
-  position: fixed;
+ 	 display:block;
+  	list-style:none;
+  	padding:0 0px 0px 278px;
+  	float: right;
+  	background-color: #FFD700;
+  	position: fixed;
 }
 
 #content
 {
-  padding:0 0px 0px 200px;	
-  background-color: #B22222;
-  font-family: 'Nunito', sans-serif;		
+  	padding:0 0px 0px 200px;	
+  	background-color: #B22222;
+  	font-family: 'Nunito', sans-serif;		
 }
 
 #footer 
 {
-  height:242px;
-  margin:0 auto;
+  	height:242px;
+  	margin:0 auto;
 	width:685px;
 	height:20px;
 	padding:10px;
