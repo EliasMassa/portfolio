@@ -3,7 +3,7 @@
 
 <head>
 
-    <title> EM Portfolio </title>
+    <title>Elias Massa Portfolio</title>
     <link rel="icon" href="images/emlogo.png">
     <link href="CSS/style.css" rel="stylesheet" type="text/css">
 
@@ -19,6 +19,22 @@
                 return false;
             }
 
+        }
+    </script>
+
+    <script>
+        function allowDrop(ev) {
+            ev.preventDefault();
+        }
+
+        function drag(ev) {
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+
+        function drop(ev) {
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            ev.target.appendChild(document.getElementById(data));
         }
     </script>
 
@@ -60,7 +76,7 @@
                         <th>Time passed:</th>
                     </tr>
                     <tr>
-                        <th>Finish to website</th>
+                        <th>Finish the website</th>
                         <th>In progress</th>
                         <th>Many hours</th>
                     </tr>
@@ -77,23 +93,67 @@
 
                 </table>
 
-                <form name="myForm" action="/action_page.php"
-                      onsubmit="return validateForm()" method="post">
-                    Write something about this webpage: <input type="text" name="fname">
-                    <input type="submit" value="Give feedback!">
-                </form>
-  
+                <div class="image">
+                    <form name="myForm" action="/action_page.php"
+                          onsubmit="return validateForm()" method="post">
+                        Write something about this webpage: <input type="text" name="fname">
+                        <input type="submit" value="Give feedback!">
+                    </form>
+                </div>
 
+                <div class="image">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/-faJA1hYVR0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+                <div class="text">
+
+                    <h3>Here's a recording of my pet frogs that I keep in my bathroom:</h3>
+
+                    <audio controls>
+                        <source src="sounds/frogs.WAV" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+
+                </div>
+
+                <div class="image">
+                    <p>Click the button below to get your loaction. Don't know why though.</p>
+
+                    <button onclick="getLocation()">Push me!</button>
+
+                    <p id="geoButton"></p>
+
+                    <script>
+                        var x = document.getElementById("geoButton");
+
+                        function getLocation() {
+                            if (navigator.geolocation) {
+                                navigator.geolocation.getCurrentPosition(showPosition);
+                            } else {
+                                x.innerHTML = "No geolocations for you.";
+                            }
+                        }
+
+                        function showPosition(position) {
+                            x.innerHTML = "Latitude: " + position.coords.latitude +
+                                "<br>Longitude: " + position.coords.longitude;
+                        }
+                    </script>
+                </div>
+
+                <div class="image">
+                    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <img src="images/vanmainen valas.png" draggable="true" ondragstart="drag(event)" id="drag1" width="180" height="180">
+                    </div>
+
+                    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                </div>
+                    
             </div>
-
-            
-
-
-        </div>
 
         <div class="footer">
 
-            <p>Copyright (R) MASSA INDUSTRIES</p>
+            <p> (C) Copyright MASSA INDUSTRIES 2018</p>
 
         </div>
 
